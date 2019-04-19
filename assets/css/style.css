@@ -26,3 +26,72 @@
     font-size: 18px;
     color: 	#135788;
 }
+
+.top_level {
+    min-height: 100vh;
+    background: url('assets/images/easter-3204589_1920.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0;
+}
+
+/*Fonts*/
+
+h1 {
+    color: skyblue;
+    font-size: 2.6rem;
+}
+
+h2 {
+    color: #00b900;
+    font-size: 2rem;
+}
+
+.block_devider {
+    color: orange;
+}
+
+
+/*Graphics*/
+
+.vertical-blue-egg {
+    display: inline-block;
+    background-color: #7498d3;
+    width: 70px;
+    height: 105px;
+    -webkit-border-radius: 50%/60% 60% 40% 40%;
+    -moz-border-radius: 50%/60% 60% 40% 40%;
+    border-radius: 50%/60% 60% 40% 40%;
+
+}
+
+.angle-left-red-egg {
+    display: inline-block;
+    background-color: #ed8484;
+    width: 75px;
+    height: 90px;
+    -webkit-border-radius: 55%/69% 59% 54% 44%;
+    -moz-border-radius: 55%/69% 59% 54% 44%;
+    border-radius: 55%/69% 59% 54% 44%;
+    -webkit-transform: skew(25deg, 0deg);
+    -moz-transform: skew(25deg, 0deg);
+    transform: skew(25deg, 0deg);
+}
+
+.angle-right-yellow-egg {
+    display: inline-block;
+    background-color: #ebed84;
+    width: 75px;
+    height: 90px;
+    -webkit-border-radius: 55%/59% 69% 44% 54%;
+    -moz-border-radius: 55%/59% 69% 44% 54%;
+    border-radius: 55%/59% 69% 44% 54%;
+    -webkit-transform: skew(-25deg, 0deg);
+    -moz-transform: skew(-25deg, 0deg);
+    transform: skew(-25deg, 0deg);
+}
