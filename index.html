@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Easter egg hunt quiz</title>
+    <title>The Easter Egg Hunt!</title>
     <link rel="shortcut icon" href="assets/Pictures/XXX.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/sketchy/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
@@ -17,12 +17,10 @@
 </head>
 
 <body>
-    <div class="test">
-        <h1>hello world</h1>
-        <span>Test text</span>
-        
 
-    </div>
+<div class="section container-fluid">
+<div class="header"><h1>Easter Egg Hunt</h1></div>
+</div>
 
     <!--TOP LEVEL CONTAINER FOR THE PAGE-->
     <div class="container top_level">
@@ -30,263 +28,268 @@
             <div class="row">
                 <div class="col-12">
                     <section class="callout jumbotron text-center py-0 pt-md-5">
-                        <h1>Your Easter egg hunt game</h1>
-                        <h2>Presented by the sixthSense hackathon team</h1>
+                        <h1>The Easter Egg Hunt</h1>
+                        <h2>Presented by the sixthSense hackathon team</h2>
                             <hr class="my-2 my-md-4 block-divider">
-                            <p class="lead py-0 py-md-5">
-                                Here we need to give a short instruction what to do
-                            </p>
-                            <div class="container button-container py-0 py-md-5">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <a class="btn btn-danger btn-lg " href="signup.html" role="button">Sign up</a>
-                                    </div>
-                                </div>
-                            </div>
-
+                            <h3>
+                                Answer the Easter questions to find the Easter Eggs!
+                            </h3>
+                            <br>
                     </section>
                 </div>
             </div>
         </div>
         <hr class="my-2 my-md-4 block-divider">
         <div class="accordion text-center" id="accordionExample">
-  <div class="card">
+            <div class="card">
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h1>Question One</h1>
+                        <p>What special treats do you get at Easter?</p>
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">Chocolate Eggs</a>
+                        <a class="btn btn-lg button-win" type="button" href="../unlucky.html">Chocolate Coins</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- QUIZ CONTAINER WITH ACCORDION -->
 
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-      <h2>Question One</h2>
-        <p>What special treats do you get at Easter?</p>
-        <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-        Chocolate Eggs
-      </a>      
-      <a class="btn btn-link" type="button" href="../unlucky.html">Chocolate Coins</a>
-      </div> 
-      
-    </div>
-    
-  </div>
-  
-  <div class="card">
-    <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-        <p>Correct Answer!</p>
-        <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">
+            <div class="card">
+                <div id="collapseTwo" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Correct Answer!</p>
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseTwo">Next Question</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div id="collapseThree" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h1>Question Two</h1>
+                        <p>What animal brings your special Easter treats?</p>
+
+                        <a class="btn btn-lg button-win" type="button" href="..unlucky.html">Alligator</a>
+
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseThree">Bunny</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseFour" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Correct Answer!</p>
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFour">
         Next Question
       </a>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="card">
-    <div id="collapseThree" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-      <h2>Question Two</h2>
-        <p>What animal brings your special Easter treats?</p>
-             
-      <a class="btn btn-link" type="button" href="..unlucky.html">Alligator</a>
-      
-      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseThree">
-        Bunny
-      </a> 
-      
-      </div> 
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseFour" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-        <p>Correct Answer!</p>
-        <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFour">
-        Next Question
-      </a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseFive" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-      <h2>Question Three</h2>
-        <p>What type of bun would you eat at Easter?</p>
-             
-      <a class="btn btn-link" type="button" href="../unlucky.html">Bread bun</a>
-      
-      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseFive">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseFive" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h1>Question Three</h1>
+                        <p>What type of bun would you eat at Easter?</p>
+
+                        <a class="btn btn-lg button-win" type="button" href="../unlucky.html">Bread bun</a>
+
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseFive">
         Hot Cross Bun
       </a>
-      
-      <a class="btn btn-link" type="button" href="../unlucky.html">Sausage in a bun</a>
-      
-      </div> 
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseSix" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-        <p>Correct Answer!</p>
-        <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSix">
+
+                        <a class="btn btn-lg button-win" type="button" href="../unlucky.html">Sausage in a bun</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseSix" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Correct Answer!</p>
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSix">
         Next Question
       </a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseSeven" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-      <h2>Question Four</h2>
-        <p>What comes between Pancake Day and Easter?</p>
-             
-      <a class="btn btn-link" type="button" href="../closer.html">Christmas</a>
-      
-      <a class="btn btn-link" type="button" href="../closer.html">Summer</a>
-      
-      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseSeven">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseSeven" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h1>Question Four</h1>
+                        <p>What comes between Pancake Day and Easter?</p>
+
+                        <a class="btn btn-lg button-win" type="button" href="../closer.html">Christmas</a>
+
+                        <a class="btn btn-lg button-win" type="button" href="../closer.html">Summer</a>
+
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseSeven">
         Lent
       </a>
-      
-      </div> 
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseEight" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-        <p>Correct Answer!</p>
-        <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseEight">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseEight" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Correct Answer!</p>
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseEight">
         Next Question
       </a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseNine" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-      <h2>Question Five</h2>
-        <p>How heavy was the biggest chocolate egg in the world?</p>
-             
-      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseNine">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseNine" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h1>Question Five</h1>
+                        <p>How heavy was the biggest chocolate egg in the world?</p>
+
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="true" aria-controls="collapseNine">
         7200kg
       </a>
-      
-      <a class="btn btn-link" type="button" href="../closer.html">1,000,000kg</a>
-      
-      <a class="btn btn-link" type="button" href="../closer.html">200kg</a>
-      
-      </div> 
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseTen" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-        <p>Correct Answer!</p>
-        <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseTen">
+
+                        <a class="btn btn-lg button-win" type="button" href="../closer.html">1,000,000kg</a>
+
+                        <a class="btn btn-lg button-win" type="button" href="../closer.html">200kg</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseTen" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Correct Answer!</p>
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="true" aria-controls="collapseTen">
         Next Question
       </a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseEleven" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-      <h2>Question Six</h2>
-        <p>What does the Spanish word 'Pascua' mean in English?</p>
-             
-      <a class="btn btn-link" type="button" href="../closer.html">Jesus</a>
-      
-      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseEleven">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseEleven" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h1>Question Six</h1>
+                        <p>What does the Spanish word 'Pascua' mean in English?</p>
+
+                        <a class="btn btn-lg button-win" type="button" href="../closer.html">Jesus</a>
+
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="true" aria-controls="collapseEleven">
         Easter
       </a>
-      
-      <a class="btn btn-link" type="button" href="../closer.html">Bunny</a>
-      
-      <a class="btn btn-link" type="button" href="../closer.html">Springtime</a>
-      
-      </div> 
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseTwelve" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-        <p>Correct Answer!</p>
-        <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseTwelve">
+
+                        <a class="btn btn-lg button-win" type="button" href="../closer.html">Bunny</a>
+
+                        <a class="btn btn-lg button-win" type="button" href="../closer.html">Springtime</a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseTwelve" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Correct Answer!</p>
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="true" aria-controls="collapseTwelve">
         Next Question
       </a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseThirteen" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-      <h2>Question Seven</h2>
-        <p>As well as the Easter Bunny, what other type of animal do you get at Easter?</p>
-             
-      <a class="btn btn-link" type="button" href="../almost.html">Puppies</a>
-      
-      <a class="btn btn-link" type="button" href="../almost.html">Crocodiles</a>
-      
-      <a class="btn btn-link" type="button" href="../almost.html">Elephants</a>
-      
-      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseThirteen">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseThirteen" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h1>Question Seven</h1>
+                        <p>As well as the Easter Bunny, what other type of animal do you get at Easter?</p>
+
+                        <a class="btn btn-lg button-win" type="button" href="../almost.html">Puppies</a>
+
+                        <a class="btn btn-lg button-win" type="button" href="../almost.html">Crocodiles</a>
+
+                        <a class="btn btn-lg button-win" type="button" href="../almost.html">Elephants</a>
+
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="true" aria-controls="collapseThirteen">
         Chicks
       </a>
-      
-      </div> 
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseFourteen" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-        <p>Correct Answer!</p>
-        <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFourteen">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseFourteen" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Correct Answer!</p>
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="true" aria-controls="collapseFourteen">
         Next Question
       </a>
-      </div>
-    </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseFifteen" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-      <h2>Question Eight</h2>
-        <p>Which animal is used instead of the Easter Bunny in Australia?</p>
-             
-      <a class="btn btn-link" type="button" href="../almost.html">Easter Koala</a>
-      
-      <a class="btn btn-link" type="button" href="../almost.html">Easter Wombat</a>
-      
-      <a class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="true" aria-controls="collapseFifteen">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseFifteen" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h1>Question Eight</h1>
+                        <p>Which animal is used instead of the Easter Bunny in Australia?</p>
+
+                        <a class="btn btn-lg button-win" type="button" href="../almost.html">Easter Koala</a>
+
+                        <a class="btn btn-lg button-win" type="button" href="../almost.html">Easter Wombat</a>
+
+                        <a class="btn btn-lg button-win" type="button" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="true" aria-controls="collapseFifteen">
         Easter Bilby
       </a>
-      
-      <a class="btn btn-link" type="button" href="../almost.html">Easter Kangaroo</a>
-      
-      
-      </div> 
+
+                        <a class="btn btn-lg button-win" type="button" href="../almost.html">Easter Kangaroo</a>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="collapseSixteen" class="collapse" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <p>Correct Answer!</p>
+                        <button class="btn btn-lg button-win" data-toggle="modal" data-target="#send-button">Finish</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
-  
-  <div class="card">
-    <div id="collapseSixteen" class="collapse" data-parent="#accordionExample">
-      <div class="card-body">
-        <p>Correct Answer!</p>
-        <a class="btn btn-link" type="button" href="../modal.html">
-        Finish
-      </a>
-      </div>
-    </div>
-  </div>
-  
-</div>
+    
+    <div class="modal" tabindex="-1" role="dialog" id="send-button">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header header-win">
+                
+                <img src="../assets/images/easterhunt.jpeg" alt="easterhunt" class="header-logo"></img>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body body-bg text-center">
+                    <p class="p1">Congratulations!</p><br>
+                    <p class="p2">You are the winner!</p>
+                </div>
+                <div class="modal-footer footer-bg">
+                    <button type="button" class="btn btn-danger button-win" data-dismiss="modal">Close!</button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer>
@@ -303,7 +306,7 @@
             </div>
         </div>
     </footer>
-
+    
 </body>
 
 </html>
